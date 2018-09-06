@@ -1,7 +1,7 @@
 # Учебный проект «Код и Магия» [![Build status][travis-image]][travis-url]
 
-* Студент: [Elena P](https://up.htmlacademy.ru/javascript/15/user/861507).
-* Наставник: `Неизвестно`.
+- Студент: [Elena P](https://up.htmlacademy.ru/javascript/15/user/861507).
+- Наставник: [Дмитрий Мирошниченко](https://htmlacademy.ru/profile/id591417).
 
 ---
 
