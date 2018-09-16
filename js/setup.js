@@ -59,21 +59,19 @@ var similarWizardTemplate = document
 
 var renderWizard = function (wizard) {
   var wizardElement = similarWizardTemplate.cloneNode(true);
-  wizardElement.querySelector('.setup-similar-label').textContent = wizard.name;
-  wizardElement.querySelector('.wizard-coat').style.fill = wizard.coatColor;
-  wizardElement.querySelector('.wizard-eyes').style.fill = wizard.eyesColor;
+  wizardElement.querySelector('.setup-similar-label').textContent =
+    wizard.names;
+  wizardElement.querySelector('.wizard-coat').style.fill = wizard.coatColors;
+  wizardElement.querySelector('.wizard-eyes').style.fill = wizard.eyesColors;
   return wizardElement;
 };
 
 var fragment = document.createDocumentFragment();
 for (var j = 0; j < wizards.length; j++) {
   fragment.appendChild(renderWizard(wizards[j]));
-  console.log(wizards[j]);
   // отрисовка нового элемента
 }
 similarListElement.appendChild(fragment);
-console.log(document.querySelector('setup-similar-label'));
-console.dir(fragment);
 
 var user2Dialog = document.querySelector('.setup-similar');
 user2Dialog.classList.remove('hidden');
